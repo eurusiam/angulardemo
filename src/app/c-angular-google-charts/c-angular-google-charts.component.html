@@ -1,0 +1,16 @@
+<p>c-google-charts works!</p>
+
+<div *ngFor="let chart of charts">
+  <google-chart
+    [title]="chart.title"
+    [type]="chart.type"
+    [data]="chart.data"
+    [columns]="chart.columns"
+    [options]="chart.options"
+  >
+  </google-chart>
+</div>
+
+<div>{{charts | json}}</div>
+
+<div>end</div>
